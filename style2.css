@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Varela Round",sans-serif;
+    background-color:white;
+}
+
+#login{
+    width:150px;
+    border-radius: 20px;
+    background-color:turquoise;
+}
+
+.leftnavbar{
+    display:flex;
+    justify-items: space-around;
+}
+
+.logout{
+    background-color: turquoise;
+    color:black;
+    border-radius: 5px;
+}
