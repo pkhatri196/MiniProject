@@ -27,11 +27,11 @@ crossorigin="anonymous"
 
     <title>Homescreen</title>
 </head>
-<body>
+<body onload="loadInitialTasks()">
 
 
     <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -71,11 +71,11 @@ crossorigin="anonymous"
               </div>
         </div>
         <div class="modal-footer">
-          <button id="login" type="submit" class="btn btn-info" onclick="done()" >Done</button>
+          <button id="login" type="submit" class="btn btn-info" onclick="done()" data-bs-dismiss="modal" >Done</button>
         </div>
       </div>
     </div>
-  </div>
+   </div>
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -132,7 +132,7 @@ crossorigin="anonymous"
               <h5 class="card-title">Task Title</h5>
               <p class="card-text">Task Description .......</p>
 
-              <button type="button" class="btn btn-outline-dark">
+              <button type="button" class="btn btn-outline-dark*">
                <i class="far fa-calendar"></i>
                   <div class="showme">Date</div>
                 </button>

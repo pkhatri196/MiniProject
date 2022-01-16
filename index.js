@@ -1,5 +1,7 @@
 const taskContainer = document.querySelector(".task__container");
-console.log(taskContainer);
+
+//Global Store
+const globalStore=[];
 
 const newTask = 
     ({id,
@@ -30,6 +32,22 @@ const newTask =
          </div>
 `
 
+const loadInitialTasks =() => {
+//access localstorage
+const getInitialData = localStorage.getItem("tasky");
+if(!getInitialData) return;  
+
+//convert stringified-object to object
+const {tasks} = JSON.parse(getInitialData);
+
+//map around the array to generate HTML taskcard and inject it to DOM
+tasks.map( (taskObject) => {
+  const assignNewTask = newTask(taskObject);
+  taskContainer.insertAdjacentHTML("beforeend",assignNewTask);
+  globalStore.push(taskObject);
+});
+};
+
 
 const done = () =>{
     const taskData = {
@@ -44,4 +62,7 @@ const done = () =>{
     
     const assignNewTask = newTask(taskData);
     taskContainer.insertAdjacentHTML("beforeend",assignNewTask);
-};
+    globalStore.push(taskData);
+
+    localStorage.setItem("tasky",JSON.stringify({ tasks : globalStore}));
+}; 
