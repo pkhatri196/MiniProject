@@ -21,15 +21,10 @@ body{
 }
 
 .logout{
-    background-color: turquoise;
-    color:black;
+     color:black;
     border-radius: 5px;
+    background-color: turquoise;
 }
-
-/* .showme {
-    display: none;
-  }
-  
-  .showhim:hover .showme {
-    display: block;
-  } */
+.logout:hover{
+    background-color: turquoise;
+}
