@@ -12,7 +12,7 @@ const newTask =
 <div class="col-md-3" id=${id}>
           <div class="logout shadow mx-auto mt-4"  style="max-width: 18rem;">
             <div class="card-header">
-              <button type="button" id=${id} class="btn btn-outline-dark" onclick="deleteTask.apply(this, arguments)">
+              <button type="button" id=${id} class="btn btn-outline-dark" onclick="deleteTask.apply(this,arguments)">
                 <i class="fas fa-check" id=${id} onclick="deleteTask.apply(this, arguments)"></i>
               </button>
             </div>
@@ -93,3 +93,18 @@ return taskContainer.removeChild(
 );
 
 };
+
+
+
+
+// function login(loginForm)
+// {
+//     if(loginForm.username.value && loginForm.password.value)
+//     {
+//         var username= document.getElementById("Username").value;
+//         document.write('<html><body><h1><center>')
+//         document.write("Welcome" + " ")
+//         document.write(username);
+//         document.write('</center></h1></body></html>')
+//     }
+// };

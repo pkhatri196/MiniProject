@@ -11,7 +11,7 @@ const newTask =
     targetDate,
     priority}) => `
 <div class="col-md-3" id=${id}>
-          <div class="logout shadow mx-auto mt-4"  style="max-width: 18rem;">
+          <div class="logout shadow text-left mx-auto mt-4"  style="max-width: 18rem;">
             <div class="card-header">
               <button type="button" id=${id} class="btn btn-outline-dark" onclick="deleteTask.apply(this, arguments)">
                 <i class="fas fa-check" id=${id} onclick="deleteTask.apply(this, arguments)"></i>

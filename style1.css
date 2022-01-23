@@ -10,11 +10,16 @@ body{
     overflow-x:hidden;
 }
 
+
 #title{
     margin-left:160px;
     color:turquoise;
     text-decoration: underline;
 
+}
+
+#loginForm{
+    margin:auto -150px;
 }
 
 #signUp{
